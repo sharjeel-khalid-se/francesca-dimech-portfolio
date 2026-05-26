@@ -1,0 +1,63 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model VideoReel {
+  id Int @id @default(autoincrement())
+  title String
+  role String
+  director String?
+  year String
+  category String // e.g., "Feature Film", "TV", "Short Film", "Commercial"
+  description String?
+  thumnailUrl String? // Link to image hosted on Cloudinary/AWS
+  videoUrl String?  // YouTube or Vimeo link
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model AudioTrack {
+  id Int @id @default(autoincrement())
+  title String
+  album String?
+  realeaseYear String?
+  audioUrl String // Link to mp3 file
+  duration String // e.g., "03:45"
+  createdAt DateTime @default(now())
+}
+
+model Gig{
+  id Int @id @default(autoincrement())
+  date DateTime
+  venue String 
+  location String // e.g., "London, UK"
+  ticketLink String?
+  status String // e.g., "Tickets", "Sold Out"
+  createdAt DateTime @default(now())
+}
+
+model Workshop{
+  id Int @id @default(autoincrement())
+  title String
+  category String // e.g., "Movement", "Voice", "Acting"
+  startDate String
+  endDate String
+  location String // e.g., "Berlin, Studio 4A" or "Online (Zoom)"
+  timeDescription String // e.g., "10:00 AM - 4:00 PM"
+  maxParticipants Int
+  spotsLeft Int
+  price Float
+  currency String @default("€")
+  signupLink String
+  createdAt DateTime @default(now())
+}
