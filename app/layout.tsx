@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ReduxProvider } from "@/redux/ReduxProvider";
 // import GlobalAudioPlayer from "@/components/GlobalAudioPlayer"; //  build this later
+import Navbar from '@/components/Navbar'
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +34,9 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <ReduxProvider>
           {/* Navbar Here */}
+          <Navbar/>
           {children}
+          <Footer/>
           {/* Global Audio Player */}
         </ReduxProvider>
       </body>
