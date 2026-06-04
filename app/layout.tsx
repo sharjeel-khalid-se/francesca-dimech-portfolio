@@ -5,6 +5,7 @@ import { ReduxProvider } from "@/redux/ReduxProvider";
 // import GlobalAudioPlayer from "@/components/GlobalAudioPlayer"; //  build this later
 import Navbar from '@/components/Navbar'
 import Footer from "@/components/Footer";
+import GlobalAudioPlayer from '@/components/GlobalAudioPlayer'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,7 +38,7 @@ export default function RootLayout({
           <Navbar/>
           {children}
           <Footer/>
-          {/* Global Audio Player */}
+          <GlobalAudioPlayer/>
         </ReduxProvider>
       </body>
     </html>
