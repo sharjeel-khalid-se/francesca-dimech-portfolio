@@ -62,8 +62,7 @@ export default function Footer() {
               Follow
             </h3>
             <div className="flex space-x-5">
-              <a href="/contact" className="text-gray-600 hover:text-violet-600 transition-colors"><Mail size={20} strokeWidth={1.5} /></a>
-            </div>
+<Link href="/contact" className="text-gray-600 hover:text-violet-600 transition-colors"><Mail size={20} strokeWidth={1.5} /></Link>            </div>
           </div>
 
         </div>

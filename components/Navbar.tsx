@@ -12,6 +12,7 @@ import {
   Zap, 
   User 
 } from "lucide-react";
+import Profile from '../assets/francesca-dimech_1_hero_image.jpg'
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -80,7 +81,7 @@ export default function Navbar() {
               <div className="h-10 w-10 rounded-full bg-gray-200 overflow-hidden border border-gray-200">
                 {/* Replace with actual avatar image later */}
                 <Image 
-                  src="/api/placeholder/40/40" 
+                  src={Profile} 
                   alt="Profile" 
                   width={40} 
                   height={40} 
