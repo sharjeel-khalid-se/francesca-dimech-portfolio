@@ -63,7 +63,7 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 className={`text-sm transition-colors ${
-                  pathname === "/contact" ? "font-bold text-gray-900" : "font-medium text-gray-500 hover:text-violet-600"
+                  pathname === "f/contact" ? "font-bold text-gray-900" : "font-medium text-gray-500 hover:text-violet-600"
                 }`}
               >
                 Contact
