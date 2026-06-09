@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Francesca Dimech Portfolio
+
+A custom client portfolio website for Francesca Dimech, built to showcase her work across acting, music, teaching, and writing. The site presents a professional, media-rich overview of her creative practice and gives visitors a clear path to explore each discipline in more detail.
+
+The homepage introduces Francesca with a strong hero section, featured projects, and clear calls to action for listening, viewing profiles, or making direct enquiries. Supporting pages expand on each part of her work, including performance credits, music, workshops, and writing services.
+
+## What The Project Includes
+
+- A responsive home page with featured disciplines and project highlights.
+- Dedicated sections for acting, music, teaching, writing, and contact details.
+- An audio player experience for previewing selected music.
+- Media-driven layouts using images, cards, and call-to-action blocks.
+- A modern content structure suitable for a professional client portfolio.
+
+## Tech Stack
+
+- Next.js 16 with the App Router
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- Prisma and PostgreSQL integration
+- Redux Toolkit for client state
+- Lucide React icons
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - start the local development server.
+- `npm run build` - create a production build.
+- `npm run start` - run the production server.
+- `npm run lint` - run ESLint.
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `app/` - application routes and page layouts.
+- `components/` - shared UI components.
+- `redux/` - Redux store and slices.
+- `lib/` - shared server-side utilities.
+- `prisma/` - database schema and migrations.
+- `public/` - static assets.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## About The Client Work
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project was created as a client portfolio site for Francesca Dimech, designed to present her work in a clear, polished, and professional way. The goal is to help visitors quickly understand her range as a performer and creative practitioner, while making it easy to listen, browse, and get in touch.
